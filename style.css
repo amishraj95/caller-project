@@ -1,0 +1,158 @@
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #f5f5f5;
+  font-family: "DM Sans", sans-serif;
+  overflow: hidden;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  height: 400px;
+  overflow: hidden;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  padding: 1em 1em 0em 1em;
+  border-radius: 60px;
+}
+
+.container .mockup {
+  width: 300px;
+}
+
+.island {
+  width: 85px;
+  background-color: rgba(255, 255, 255, 0.986);
+  height: 25px;
+  border-radius: px;
+  position: absolute;
+  top: 37px;
+  transition: 0.3s ease;
+  display:flex;
+  justify-content:flex-end;
+  align-items: center;
+}
+.caller > img {
+    justify-content:end; 
+    margin-left: 450%;
+}
+
+.island-content {
+  opacity: 0;
+  transform: scale(0);
+  height: 200%;
+  width: 100%;
+  display: flex;
+  padding: 0 0.6em;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.caller {
+  display: flex;
+  align-items: flex-end ;
+  margin-right: auto;
+  justify-content: flex-start;
+}
+
+.caller-picture {
+  width: 40px;
+  margin-right: 0.7em;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center center;
+  justify-content: end;
+}
+
+.caller-details {
+  color: rgb(0, 0, 0);
+  opacity: 1;
+  margin-right: 20%;
+}
+
+.caller-details p {
+  font-size: 12px;
+  font-weight: 300;
+  margin: 0;
+}
+
+.caller-details h2 {
+  white-space: nowrap;
+  margin: 0;
+  font-weight: 500;
+  font-size: 12px;
+  color: #030303;
+}
+
+.call-buttons {
+  display:flexbox;
+  align-items: flex-end ;
+
+}
+ 
+
+.call-button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  margin-left: 0.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+i {
+  color: #fff;
+  font-size: 16px;
+}
+
+.decline i {
+  transform: rotate(135deg) translate(1px, -1px);
+}
+
+.answer i {
+  transform: translate(0, 1px);
+}
+
+.answer {
+  background-color: #43ee3a;
+}
+
+.decline {
+  background-color: #fd4635;
+}
+
+/* On Hover */
+
+.island:hover {
+  cursor: pointer;
+  margin-right: 0rem ;
+  width: 53%;
+  height: 32%;
+  border-radius: 10px;
+  border-left: 0px;
+  border-right: 1px;
+  transition: 0.3s ease;
+}
+
+.island:hover .island-content {
+  transition: 0.3s ease;
+  margin-right: 7px;
+}
